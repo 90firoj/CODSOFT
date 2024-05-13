@@ -1,0 +1,33 @@
+<!-- This code will generate the structure of the calculator -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="calculator" >
+        <div class="display" id="display">0</div> <!-- It's Screen ..it will show 0 when scren is empty at the first -->
+        <button class="button" onclick="cleardisplay()">C</button> <!-- A  function will be creted in js to clear the calculator display -->
+        <button class="button" onclick="Delete()">Del</button> <!-- A function name delete wil create an dit will delete the last digit right hand side -->
+        <button class="button" onclick="Display()">7</button> <!-- A function will created name Display() to Display the digit in screen -->
+        <button class="button" onclick="Display()">8</button>
+        <button class="button" onclick="Display()">9</button>
+        <button class="button" onclick="OPerator('+')">+</button> <!-- A function called operator for operations -->
+        <button class="button" onclick="Display()">4</button>
+        <button class="button" onclick="Display()">5</button>
+        <button class="button" onclick="Display()">6</button>
+        <button class="button" onclick="Operator('-')">-</button>
+        <button class="button" onclick="Display()">1</button>
+        <button class="button" onclick="Display()">2</button>
+        <button class="button" onclick="Display()">3</button>
+        <button class="button" onclick="Operator('*')">*</button>
+        <button class="button" onclick="Display()">0</button>
+        <button class="button" onclick="Operator('/')">/</button>
+        <button class="button" onclick="Operator('%')">%</button>
+        <button class="button" onclick="Calculate()">=</button> <!-- calculate function calculate the given digits -->
+    </div>
+
+</body>
+</html>
