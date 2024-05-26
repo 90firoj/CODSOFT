@@ -5,16 +5,23 @@
     position: absolute;
     top: 20%;
     left: 40%;
+    width: 300px;
 
 }
 .display{
-    grid-column: 4;
+    grid-column:4;
     text-align: right;
     font-size: 35px;
+
+    height: 60px; /* Fixed height */
+    width: 90px;
+    overflow:scroll; /* Hide overflow */
+    white-space: nowrap; /* Prevent text from wrapping */
     
 }
 .button{
     padding: 20px;
     background-color: aquamarine;
-    border-radius: 50%;
+    border-radius: 40%;
 }
+
