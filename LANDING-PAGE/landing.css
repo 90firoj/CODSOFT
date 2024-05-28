@@ -87,3 +87,36 @@ nav{
     background: transparent;
     border: 1px solid indianred;
 }
+#about{
+    color: white;
+    width: 20%;
+    float:left;
+    height: 80%;
+    letter-spacing: 2px;
+    margin-left: 1em;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+#about h2{
+    color: black;
+    font-size: 30px;
+}
+@keyframes slideInleft {
+    from{
+        transform: translateX(-300px);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+#about p{
+    animation-name:slideInleft ;
+    animation-duration:1s;
+    animation-timing-function: ease-in;
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+    animation-direction:normal;
+    animation-fill-mode: both;
+    transform: translateX(-150px);
+}
