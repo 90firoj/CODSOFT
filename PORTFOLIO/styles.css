@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Courier New', Courier, monospace;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    scroll-behavior: smooth;
+}
+:root{
+    --bg-color:#191f36;
+    --snd-bf-color:#262B40;
+    --text-color:#fff;
+    --main-color:#59B2F4;
+}
+html{
+    font-size: 63%;
+    overflow: hidden;
+}
+body{
+    background: var(--bg-color);
+    color:var(--text-color);
+}
+section{
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background:#59B2F4;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.logo{
+    font-size: 3rem;
+    color: black;
+    font-weight: 700;
+    cursor: pointer;
+}
+.navbar a{
+    font-size: 2rem;
+    color: black;
+    margin-left: 4rem;
+    font-weight: 700;
+}
+.navbar a:hover,
+.navbar a.active{
+    color: black;
+}
+#menu-icon{
+    font-size: 4rem;
+    color: black;
+    display: none;
+
+}
+.home{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.home-content h3{
+    font-size: 4rem;
+    font-weight: 700;
+}
+.home-content h3:nth-of-type(2){
+    margin-bottom: 2rem;
+}
+span{
+    color: var(--main-color);
+}
+.home-content h1{
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 2;
+}
+img{
+    border-radius: 50%;
+    height: 300px;
+    width: 75px;
+
+}
+.homeimg img{
+    width: 25vw;
+    animation: floatImage 4s ease-in-out infinite;
+    
+}
+@keyframes floatImage{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-3rem);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+.social-media a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background: transparent;
+    border: .2rem solid #59B2F4;
+    border-radius: 2rem;
+    font-size: 3rem;
+    color: #59B2F4;
+    margin: 3rem 2rem 3rem;
+    transition: .5s ease;
+}
+.button{
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 20px;
+    background: indianred;
+    border-radius: 10px;
+    transition: 0.4s linear;
+    letter-spacing: 2px;
+}
+.button:hover{
+    background: transparent;
+    border: 1px solid indianred;
+       
+}
