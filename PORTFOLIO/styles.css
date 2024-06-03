@@ -157,3 +157,37 @@ img{
     font-size: 2rem;
     margin: 2rem 0 3rem;
 }
+.services h2{
+    margin-bottom: 5rem;
+}
+.services-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.services-content .services-box{
+    flex: 1 1 30rem;
+    background: var(--snd-bf-color);
+    padding: 3rem 2rem 4rem;
+    text-align: center;
+    border-radius: 2rem;
+    border: .2rem solid var(--bg-color);
+    transition: .5s ease;
+}
+.services-content .services-box:hover{
+    border-color: var(--main-color);
+    transform: scale(1.02);
+}
+.services-box i{
+    font-size: 7rem;
+    color: var(--main-color);
+}
+.services-box h3{
+    font-size: 2.6rem;
+}
+.services-box p{
+    font-size: 1.6rem;
+    margin: 1rem 0 3rem;
+}
